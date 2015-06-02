@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         v.customize ["modifyvm", :id, "--memory", 512]	
     end
 
-    # config.vm.synced_folder "projetos", "/var/www/html", id: "vagrant-root"
+    config.vm.synced_folder "projetos", "/var/www/html", id: "vagrant-root"
 
 	config.vm.provision "puppet" do |puppet|
 		puppet.module_path = "puppet/modules"
