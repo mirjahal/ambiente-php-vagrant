@@ -16,9 +16,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     config.vm.synced_folder "projetos", "/var/www/html", id: "vagrant-root"
 
-	config.vm.provision "puppet" do |puppet|
-		puppet.module_path = "puppet/modules"
-		puppet.manifests_path = "puppet/manifests"
-		puppet.manifest_file  = "init.pp"
-	end
+    config.vm.provision "puppet" do |puppet|
+        puppet.module_path = "puppet/modules"
+        puppet.manifests_path = "puppet/manifests"
+        puppet.manifest_file  = "init.pp"
+    end
 end
