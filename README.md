@@ -23,6 +23,7 @@ Fique à vontade para expandir essas configurações de acordo com suas necessidade
 * cURL
 * MCrypt
 * ImageMagick
+* Node (Com Bower e Gulp)
 
 ### Iniciando sua máquina virtual
 * Clone o repositório do projeto;
