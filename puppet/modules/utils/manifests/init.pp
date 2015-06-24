@@ -23,7 +23,8 @@ class utils {
 			"libcurl3-dev",
 			"mcrypt",
 			"imagemagick",
-			"git"
+			"git",
+			"python-software-properties"
 		]:
 		ensure => installed,
 		require => Exec["apt-update"]
