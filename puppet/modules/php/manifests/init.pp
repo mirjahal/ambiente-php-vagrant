@@ -1,4 +1,9 @@
 class php {
+	exec { "add-php56-ppa":
+		command => "/usr/bin/add-apt-repository ppa:ondrej/php5-5.6",
+		notify => Exec["apt-update"]
+	}
+
 	package { [
 			"php5", 
 			"php5-cli",
@@ -15,7 +20,10 @@ class php {
 			"php-pear"
 		]:
 		ensure => installed,
-		require => Exec["apt-update"]
+		require => [
+			Package["python-software-properties"],
+			Exec["add-php56-ppa"]
+		]
 	}
 
 	service { "php5-fpm":
