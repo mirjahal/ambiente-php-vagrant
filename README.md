@@ -1,8 +1,8 @@
-## Ambiente de desenvolvimento PHP construÌdo com Vagrant
+## Ambiente de desenvolvimento PHP constru√≠do com Vagrant
 
-### IntroduÁ„o
-Esse projeto automatiza a criaÁ„o de um ambiente para desenvolvimento com PHP.
-Fique ‡ vontade para expandir essas configuraÁıes de acordo com suas necessidades.
+### Introdu√ß√£o
+Esse projeto automatiza a cria√ß√£o de um ambiente para desenvolvimento com PHP.
+Fique √† vontade para expandir essas configura√ß√µes de acordo com suas necessidades.
 
 ### Requisitos
 * [VirtualBox](https://www.virtualbox.org)
@@ -10,14 +10,14 @@ Fique ‡ vontade para expandir essas configuraÁıes de acordo com suas necessidade
 
 ### O que tem na VM?
 * Ubuntu 14.04
-* PHP 5.5
+* PHP 5.6
 * Apache
 * MySQL
-	* usu·rio: root
-	* obs: esse usu·rio n„o possui senha.
+	* usu√°rio: root
+	* obs: esse usu√°rio n√£o possui senha.
 * Postgres
-	* usu·rio: postgres
-	* obs: esse usu·rio n„o possui senha (na verdade a senha pode ser qualquer coisa).
+	* usu√°rio: postgres
+	* obs: esse usu√°rio n√£o possui senha (na verdade a senha pode ser qualquer coisa).
 * Git
 * Composer
 * cURL
@@ -25,7 +25,7 @@ Fique ‡ vontade para expandir essas configuraÁıes de acordo com suas necessidade
 * ImageMagick
 * Node (Com Bower e Gulp)
 
-### Iniciando sua m·quina virtual
-* Clone o repositÛrio do projeto;
-* No terminal, acesse o diretÛrio raiz do projeto clonado e execute o comando "vagrant up";
-* Aguarde o Vagrant finalizar a construÁ„o da m·quina virtual. A VM ser· provisionada com o [Puppet](https://puppetlabs.com).
+### Iniciando sua m√°quina virtual
+* Clone o reposit√≥rio do projeto;
+* No terminal, acesse o diret√≥rio raiz do projeto clonado e execute o comando "vagrant up";
+* Aguarde o Vagrant finalizar a constru√ß√£o da m√°quina virtual. A VM ser√° provisionada com o [Puppet](https://puppetlabs.com).
